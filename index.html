@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monkeytype | A minimalistic, customizable typing test</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="Images/icon.png" type="image/x-icon">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <nav>
+        <div class="leftSide">
+          <div class="logo">
+            <img src="Images/Monkeytype.png" alt="">
+            <h1>monkeytype</h1>
+          </div>
+          <ul>
+            <li>
+              <a href="#"><i class="fa-regular fa-keyboard"></i></a>
+            </li>
+            <li>
+              <a href="https://www.uow.edu.au/student/support-services/academic-skills/online-resources/technology-and-software/typing/" target="_blank"><i class="fa-solid fa-info"></i></a>
+            </li>
+          </ul>
+        </div>
+          <a href=""><i class="fa-solid fa-user"></i></a>
+      </nav>
+    </header>
+    <div class="settingContainer">
+      <span id="showSettings"><i class="fa-solid fa-gear"></i> Show Settings</span>
+    </div>
+    <div class="row">
+      <div class="punc_num">
+        <div class="btns">
+          <button><i class="fa-solid fa-at"></i> punctuation</button>
+          <button><i class="fa-solid fa-hashtag"></i> numbers</button>
+        </div>
+      </div>
+      <div class="mode">
+        <div class="btns">
+          <button class="active"><i class="fa-solid fa-clock"></i> time</button>
+          <button><i class="fa-solid fa-a"></i> words</button>
+          <button><i class="fa-solid fa-quote-left"></i> quotes</button>
+          <button><i class="fa-solid fa-wrench"></i> custom</button>
+        </div>
+      </div>
+      <div class="time">
+        <div class="btns">
+          <button>15</button>
+          <button class="active">30</button>
+          <button>60</button>
+          <button>120</button>
+          <button><i class="fa-solid fa-screwdriver-wrench"></i></button>
+        </div>
+      </div>
+    </div>
+    <p class="timer"></p>
+    <div id="game" tabindex="0">
+      <div id="words"></div>
+      <div id="cursor"></div>
+      <div id="focus-error">
+        <i class="fa-solid fa-arrow-pointer"></i> Click here to focus
+      </div>
+    </div>
+
+    <div class="again">
+      <i id="newGamebtn" class="fa-solid fa-rotate-right"></i>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
